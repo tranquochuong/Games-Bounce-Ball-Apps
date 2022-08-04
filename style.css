@@ -1,0 +1,157 @@
+.background {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+    inline-size: 100%;
+    block-size: 98vh;
+    background-image: url("Image2.jpg");
+}
+canvas{
+    box-shadow: #100108 30;
+    border-radius: 25px;
+    background: url("Image1.jpg");
+    animation: zoom-in-zoom-out 4s ease-out infinite;
+    
+      }
+      
+      @keyframes zoom-in-zoom-out {
+        0% {
+          transform: scale(0.99, 0.99);
+          border: none;
+        }
+        50% {
+          transform: scale(1.01, 1.01);
+        }
+        100% {
+          transform: scale(0.99, 0.99);
+        }
+      }
+
+.d-none{
+    display: none;
+}
+.btn{
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgb(212, 201, 151);
+    
+}
+.namegames{
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(4, 4, 65);
+}
+.btn_Reset {
+    font-size: 15px;
+    box-shadow: 1px 1px 1px red;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    background-color: darkorange;
+    transform: scale(0.9);
+    transition: 2s;
+}
+
+.btn_Star_Games{
+    font-size: 15px;
+    box-shadow: 1px 1px 1px red;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    background-color: darkorange;
+    transform: scale(0.9);
+    transition: 2s;
+}
+
+.btn_Quit{
+    font-size: 15px;
+    box-shadow: 1px 1px 1px red;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    background-color: darkorange;
+    transform: scale(1.1);
+    transition: 2s;
+}
+
+    
+.btn_Resume{
+    font-size: 15px;
+    box-shadow: 1px 1px 1px red;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    background-color: darkorange;
+    transform: scale(0.9);
+    transition: 2s;
+}
+
+.btn_Pause{
+    font-size: 15px;
+    box-shadow: 1px 1px 1px red;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5px;
+    background-color: darkorange;
+    transform: scale(0.9);
+    transition: 2s;
+}
+.btn_nextLever1{
+    font-size: 15px;
+    box-shadow: 1px 1px 1px red;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+    transform: scale(0.9);
+    transition: 2s;
+}
+.btn_nextLever2{
+    font-size: 15px;
+    box-shadow: 1px 1px 1px red;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+    transform: scale(0.9);
+    transition: 2s;
+}
+.btn_nextLever3{
+    font-size: 15px;
+    box-shadow: 1px 1px 1px red;
+   border: none;
+   font-family: 'Courier New', Courier, monospace;
+   background-color: aqua;
+   transform: scale(0.9);
+   transition: 2s;
+}
+.btn_nextLever4{
+    font-size: 15px;
+    box-shadow: 1px 1px 1px red;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+   background-color: aqua;
+   transform: scale(0.9);
+   transition: 2s;
+}
+.btn_nextLever5{
+    font-size: 15px;
+    box-shadow: 1px 1px 1px red;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+    transform: scale(0.9);
+    transition: 2s;
+}
+.btn_nextLever6{
+    font-size: 15px;
+    box-shadow: 1px 1px 1px red;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+    transform: scale(0.9);
+    transition: 2s;
+}
