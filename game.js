@@ -34,7 +34,7 @@ var ctx = canvas.getContext("2d");
     var dx = 1.5;
     var dy = -1.5;
     var Score = 0;
-    var MaxScore = 12;
+    var MaxScore =12;
     var isGamesOver = false;
     var isGamesWin = false;
 
@@ -120,54 +120,53 @@ function RectangleColliBall(){
         if(Score > 2){
             dx = dx + 0.5;
             dy = dy - 0.5;
-    document.getElementById("action_6").classList.add("d-none");
-    document.getElementById("action_7").classList.remove("d-none");
+    document.getElementById("lv1").classList.add("d-none");
+    document.getElementById("lv2").classList.remove("d-none");
     
 } 
         if(Score > 4){
             dx = dx + 1;
             dy = dy - 1;
-    document.getElementById("action_6").classList.add("d-none");
-    document.getElementById("action_7").classList.add("d-none");
-    document.getElementById("action_8").classList.remove("d-none");
+    document.getElementById("lv1").classList.add("d-none");
+    document.getElementById("lv2").classList.add("d-none");
+    document.getElementById("lv3").classList.remove("d-none");
         }
         if(Score > 6){
             dx = dx + 1.5;
             dy = dy - 1.5;
-    document.getElementById("action_6").classList.add("d-none");
-    document.getElementById("action_7").classList.add("d-none");
-    document.getElementById("action_8").classList.add("d-none");
-    document.getElementById("action_9").classList.remove("d-none");
+    document.getElementById("lv1").classList.add("d-none");
+    document.getElementById("lv2").classList.add("d-none");
+    document.getElementById("lv3").classList.add("d-none");
+    document.getElementById("lv4").classList.remove("d-none");
         }
         if(Score > 8){
             dx = dx + 2;
             dy = dy - 2;
-    document.getElementById("action_6").classList.add("d-none");
-    document.getElementById("action_7").classList.add("d-none");
-    document.getElementById("action_8").classList.add("d-none");
-    document.getElementById("action_9").classList.add("d-none");
-    document.getElementById("action_10").classList.remove("d-none");
+    document.getElementById("lv1").classList.add("d-none");
+    document.getElementById("lv2").classList.add("d-none");
+    document.getElementById("lv3").classList.add("d-none");
+    document.getElementById("lv4").classList.add("d-none");
+    document.getElementById("lv5").classList.remove("d-none");
         }
         if(Score > 10){
             dx = dx + 2.5;
             dy = dy - 2.5;
-    document.getElementById("action_6").classList.add("d-none");
-    document.getElementById("action_7").classList.add("d-none");
-    document.getElementById("action_8").classList.add("d-none");
-    document.getElementById("action_9").classList.add("d-none");
-    document.getElementById("action_10").classList.add("d-none");
-    document.getElementById("action_11").classList.remove("d-none");
+    document.getElementById("lv1").classList.add("d-none");
+    document.getElementById("lv2").classList.add("d-none");
+    document.getElementById("lv3").classList.add("d-none");
+    document.getElementById("lv4").classList.add("d-none");
+    document.getElementById("lv5").classList.add("d-none");
+    document.getElementById("lv6").classList.remove("d-none");
         }
-        if(Score >= 12){
+    else if(Score > 12){
             dx = dx + 3;
             dy = dy - 3;
-    document.getElementById("action_6").classList.add("d-none");
-    document.getElementById("action_7").classList.add("d-none");
-    document.getElementById("action_8").classList.add("d-none");
-    document.getElementById("action_9").classList.add("d-none");
-    document.getElementById("action_10").classList.add("d-none");
-    document.getElementById("action_11").classList.add("d-none");
-    document.getElementById("action_12").classList.remove("d-none");
+    document.getElementById("lv1").classList.add("d-none");
+    document.getElementById("lv2").classList.add("d-none");
+    document.getElementById("lv3").classList.add("d-none");
+    document.getElementById("lv4").classList.add("d-none");
+    document.getElementById("lv5").classList.add("d-none");
+    document.getElementById("lv6").classList.remove("d-none");
         }
     clearInterval(draw);
 }
@@ -186,11 +185,11 @@ function drawSocre(){
 function CheckGamesOver(){
     if(y -dy > canvas.height - ballRadius){
         isGamesOver = true;
-        document.getElementById("action_2").classList.add("d-none");
-        document.getElementById("action_5").classList.add("d-none");
-        document.getElementById("action_1").classList.remove("d-none");
-        document.getElementById("action_3").classList.add("d-none");
-        document.getElementById("action_4").classList.add("d-none");
+        document.getElementById("stargames").classList.add("d-none");
+        document.getElementById("pause").classList.add("d-none");
+        document.getElementById("reset").classList.remove("d-none");
+        document.getElementById("quit").classList.add("d-none");
+        document.getElementById("resume").classList.add("d-none");
         StarGames();
     }   
 }
@@ -233,7 +232,7 @@ function CheckGamesOver(){
         ctx.fillText(" Press The Reset or F5 to Play Again!", canvas.width / 4 , canvas.height/2 + 100);
         soundbackgrond.pause();
         soundgamesover.play();
-        document.getElementById("action_6").classList.add("d-none");
+        document.getElementById("lv1").classList.add("d-none");
         clearInterval(interval);
     }
  }
@@ -251,11 +250,12 @@ function CheckGamesOver(){
 
  function StarGames(){
  interval = setInterval(draw,15); 
- document.getElementById("action_2").classList.add("d-none");
- document.getElementById("action_5").classList.remove("d-none");
- document.getElementById("action_1").classList.remove("d-none");
- document.getElementById("action_6").classList.remove("d-none");
+ document.getElementById("stargames").classList.add("d-none");
+ document.getElementById("pause").classList.remove("d-none");
+ document.getElementById("reset").classList.remove("d-none");
+ document.getElementById("lv1").classList.remove("d-none");
  soundbackgrond.play();
+
 }
 
 var interval;
@@ -274,19 +274,19 @@ var gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
  ctx.font="30px Oxygen"
  ctx.fillText(" Press The Quit to Reset Games!", canvas.width / 5 , canvas.height/2 + 100);
  clearInterval(interval);
-document.getElementById("action_3").classList.remove('d-none');
-document.getElementById("action_5").classList.add('d-none');
-document.getElementById("action_1").classList.add('d-none'); 
-document.getElementById("action_4").classList.remove('d-none'); 
+document.getElementById("quit").classList.remove('d-none');
+document.getElementById("pause").classList.add('d-none');
+document.getElementById("reset").classList.add('d-none'); 
+document.getElementById("resume").classList.remove('d-none'); 
 soundbackgrond.pause();
 clearInterval(interval);
 }
 
 function Resume(){
-document.getElementById("action_4").classList.add("d-none");
-document.getElementById("action_3").classList.add('d-none');
-document.getElementById("action_5").classList.remove("d-none");
-document.getElementById("action_1").classList.remove("d-none");
+document.getElementById("resume").classList.add("d-none");
+document.getElementById("quit").classList.add('d-none');
+document.getElementById("pause").classList.remove("d-none");
+document.getElementById("reset").classList.remove("d-none");
  interval = setInterval(draw,15);  
  soundbackgrond.play();
 }
@@ -295,16 +295,16 @@ function Volumeon(){
     soundgetpoint.volume=0; 
     soundgamesover.volume=0;
     soundgameswin.volume=0;
-    document.getElementById("action_12").classList.add("d-none");
-    document.getElementById("action_13").classList.remove("d-none");
+    document.getElementById("volumeon").classList.add("d-none");
+    document.getElementById("volumeoff").classList.remove("d-none");
 }
 function Volumeoff(){
     soundbackgrond.volume=0.5;
     soundgetpoint.volume=1;
     soundgamesover.volume=1;
     soundgameswin.volume=1;
-    document.getElementById("action_13").classList.add("d-none");
-    document.getElementById("action_12").classList.remove("d-none");
+    document.getElementById("volumeoff").classList.add("d-none");
+    document.getElementById("volumeon").classList.remove("d-none");
 }
 function draw() {
     if(!isGamesOver){ 

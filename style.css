@@ -7,7 +7,7 @@
     align-items: center;
     inline-size: 100%;
     block-size: 98vh;
-    background-image: url("Image2.jpg");
+    background-image:url('Image2.jpg') ;
 }
 canvas{
     box-shadow: #100108 30;
@@ -17,10 +17,9 @@ canvas{
     
       }
       
-      @keyframes zoom-in-zoom-out {
+    @keyframes zoom-in-zoom-out {
         0% {
           transform: scale(0.99, 0.99);
-          border: none;
         }
         50% {
           transform: scale(1.01, 1.01);
@@ -123,13 +122,6 @@ canvas{
    background-color: aqua;
 }
 .btn_nextLever5{
-    font-size: 15px;
-    box-shadow: 1.5px black;
-    border: none;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: aqua;
-}
-.btn_nextLever6{
     font-size: 15px;
     box-shadow: 1.5px black;
     border: none;
