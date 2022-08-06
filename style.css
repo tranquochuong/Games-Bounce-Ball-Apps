@@ -13,7 +13,7 @@ canvas{
     box-shadow: #100108 30;
     border-radius: 25px;
     background: url("Image1.jpg");
-    animation: zoom-in-zoom-out 4s ease-out infinite;
+    animation: zoom-in-zoom-out 5s ease-out infinite;
     
       }
       
@@ -36,122 +36,113 @@ canvas{
 .btn{
     text-align: center;
     border-radius: 15px;
-    background-color: rgb(212, 201, 151);
+    background-color: rgb(221, 206, 125);
     
 }
 .namegames{
-    
     font-family: 'Courier New', Courier, monospace;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(4, 4, 65);
 }
-.btn_Reset {
-    font-size: 15px;
-    box-shadow: 1px 1px 1px red;
-    border: none;
-    font-family: 'Courier New', Courier, monospace;
+.btn_Reset:hover {
+    font-size: 20px;
     border-radius: 5px;
-    background-color: darkorange;
-    transform: scale(0.9);
-    transition: 2s;
+    box-shadow: 1.5px black;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(221, 128, 6);
+    transition: 0.5s;
+    cursor:pointer;
 }
 
-.btn_Star_Games{
+.btn_Star_Games:hover {
     font-size: 15px;
-    box-shadow: 1px 1px 1px red;
-    border: none;
-    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 1.5px black;
     border-radius: 5px;
-    background-color: darkorange;
-    transform: scale(0.9);
-    transition: 2s;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(221, 128, 6);
+    transition: 0.5s;
+    cursor:pointer;
 }
 
-.btn_Quit{
-    font-size: 15px;
-    box-shadow: 1px 1px 1px red;
-    border: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-family: 'Courier New', Courier, monospace;
+.btn_Quit:hover{
+    font-size: 20px;
+    box-shadow: 1.5px black;
     border-radius: 5px;
-    background-color: darkorange;
-    transform: scale(1.1);
-    transition: 2s;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(221, 128, 6);
+    transition: 0.5s;
+    cursor:pointer;
 }
 
     
-.btn_Resume{
-    font-size: 15px;
-    box-shadow: 1px 1px 1px red;
-    border: none;
+.btn_Resume:hover{
+    font-size: 20px;
+    box-shadow: 1.5px black;
+    border-radius: 10px;
     font-family: 'Courier New', Courier, monospace;
-    border-radius: 5px;
-    background-color: darkorange;
-    transform: scale(0.9);
-    transition: 2s;
+    background-color: rgb(221, 128, 6);
+    transition: 0.5s;
+    cursor:pointer;
 }
 
-.btn_Pause{
-    font-size: 15px;
-    box-shadow: 1px 1px 1px red;
-    border: none;
-    font-family: 'Courier New', Courier, monospace;
+.btn_Pause:hover{
+    font-size: 20px;
+    box-shadow: 1.5px black;
     border-radius: 5px;
-    background-color: darkorange;
-    transform: scale(0.9);
-    transition: 2s;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(221, 128, 6);
+    transition: 0.5s;
+    cursor:pointer;
 }
 .btn_nextLever1{
-    font-size: 15px;
-    box-shadow: 1px 1px 1px red;
+    font-size: 20px;
+    box-shadow: 1.5px black;
     border: none;
     font-family: 'Courier New', Courier, monospace;
     background-color: aqua;
-    transform: scale(0.9);
-    transition: 2s;
 }
 .btn_nextLever2{
     font-size: 15px;
-    box-shadow: 1px 1px 1px red;
+    box-shadow: 1.5px black;
     border: none;
     font-family: 'Courier New', Courier, monospace;
     background-color: aqua;
-    transform: scale(0.9);
-    transition: 2s;
 }
 .btn_nextLever3{
     font-size: 15px;
-    box-shadow: 1px 1px 1px red;
+    box-shadow: 1.5px black;
    border: none;
    font-family: 'Courier New', Courier, monospace;
    background-color: aqua;
-   transform: scale(0.9);
-   transition: 2s;
 }
 .btn_nextLever4{
     font-size: 15px;
-    box-shadow: 1px 1px 1px red;
+    box-shadow: 1.5px black;
     border: none;
     font-family: 'Courier New', Courier, monospace;
    background-color: aqua;
-   transform: scale(0.9);
-   transition: 2s;
 }
 .btn_nextLever5{
     font-size: 15px;
-    box-shadow: 1px 1px 1px red;
+    box-shadow: 1.5px black;
     border: none;
     font-family: 'Courier New', Courier, monospace;
     background-color: aqua;
-    transform: scale(0.9);
-    transition: 2s;
 }
 .btn_nextLever6{
     font-size: 15px;
-    box-shadow: 1px 1px 1px red;
+    box-shadow: 1.5px black;
     border: none;
     font-family: 'Courier New', Courier, monospace;
     background-color: aqua;
-    transform: scale(0.9);
-    transition: 2s;
 }
+.btn_volumon:hover{
+   background-color: black;
+   border-radius: 5px;
+   cursor:pointer;
+}
+.btn_volumoff:hover{
+    background-color: black;
+    border-radius: 5px;
+    cursor:pointer;
+ }

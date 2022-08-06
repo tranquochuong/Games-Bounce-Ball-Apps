@@ -1,6 +1,8 @@
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
 
+    
+
     document.addEventListener('keyup',function(event){
         if(event.keyCode==37){
             Rectangle.isMovingleft = false;
@@ -101,9 +103,9 @@ function  BallCollitheWall(){
     }    
 }
 function RectangleColliBall(){
-    if(x  + ballRadius > Rectangle.x 
-       && x + ballRadius < Rectangle.x + Rectangle.width1 
-       && y + ballRadius > canvas.height - Rectangle.height1){
+    if(x  + ballRadius  >= Rectangle.x 
+       && x + ballRadius  <=  Rectangle.width1 + Rectangle.x 
+       && y + ballRadius  >= canvas.height - Rectangle.height1 ){
        dy = -dy;
        Score += 1;
        Fasterspeed();
@@ -182,7 +184,7 @@ function drawSocre(){
     ctx.fillText("Score:" + Score, canvas.width - 100, 20);
 }
 function CheckGamesOver(){
-    if(y + dy > canvas.height - ballRadius){
+    if(y -dy > canvas.height - ballRadius){
         isGamesOver = true;
         document.getElementById("action_2").classList.add("d-none");
         document.getElementById("action_5").classList.add("d-none");
@@ -288,7 +290,22 @@ document.getElementById("action_1").classList.remove("d-none");
  interval = setInterval(draw,15);  
  soundbackgrond.play();
 }
-
+function Volumeon(){
+    soundbackgrond.volume=0;
+    soundgetpoint.volume=0; 
+    soundgamesover.volume=0;
+    soundgameswin.volume=0;
+    document.getElementById("action_12").classList.add("d-none");
+    document.getElementById("action_13").classList.remove("d-none");
+}
+function Volumeoff(){
+    soundbackgrond.volume=0.5;
+    soundgetpoint.volume=1;
+    soundgamesover.volume=1;
+    soundgameswin.volume=1;
+    document.getElementById("action_13").classList.add("d-none");
+    document.getElementById("action_12").classList.remove("d-none");
+}
 function draw() {
     if(!isGamesOver){ 
     ctx.clearRect(0, 0, canvas.width, canvas.height);
