@@ -1,140 +1,267 @@
-.background {
+.container {
     margin: 0px;
     padding: 0px;
     display: flex;
     flex-direction: column;
-    justify-content:center ;
+    justify-content: center;
     align-items: center;
     inline-size: 100%;
     block-size: 98vh;
-    background-image:url('Image2.jpg') ;
+    background-image: url('Image2.jpg');
 }
-canvas{
-    box-shadow: #100108 30;
+
+.names {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 70px;
+}
+
+.canvasLvUp {
+    box-shadow: #100108 30px;
+    border-radius: 25px;
+    background: url("NextLvUp.png");
+    animation: zoom-in-zoom-out 1s ease-out infinite;
+}
+
+.canvasWin {
+    box-shadow: #100108 30px;
+    border-radius: 25px;
+    background: url("ImageWin.png");
+    animation: zoom-in-zoom-out 1s ease-out infinite;
+}
+
+.canvasStart {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 25px;
+    background: url("ImageStart.PNG");
+    animation: zoom-in-zoom-out 5s ease-out infinite;
+}
+
+.canvas {
+    box-shadow: #100108 30px;
     border-radius: 25px;
     background: url("Image1.jpg");
     animation: zoom-in-zoom-out 5s ease-out infinite;
-    
-      }
-      
-    @keyframes zoom-in-zoom-out {
-        0% {
-          transform: scale(0.99, 0.99);
-        }
-        50% {
-          transform: scale(1.01, 1.01);
-        }
-        100% {
-          transform: scale(0.99, 0.99);
-        }
-      }
+}
 
-.d-none{
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(0.99, 0.99);
+    }
+
+    50% {
+        transform: scale(1.01, 1.01);
+    }
+
+    100% {
+        transform: scale(0.99, 0.99);
+    }
+}
+
+.container.btn_1 {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: lightblue;
+    align-items: center;
+}
+
+.btn_2 {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: lightblue;
+    align-items: center;
+}
+
+.d-none {
     display: none;
 }
-.btn{
-    text-align: center;
-    border-radius: 15px;
-    background-color: rgb(221, 206, 125);
-    
-}
-.namegames{
-    font-family: 'Courier New', Courier, monospace;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(4, 4, 65);
-}
+
 .btn_Reset:hover {
-    font-size: 20px;
+    background-color: dodgerblue;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.2s;
+    border: none;
     border-radius: 5px;
-    box-shadow: 1.5px black;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(221, 128, 6);
-    transition: 0.5s;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.btn_Star_Games:hover {
-    font-size: 15px;
-    box-shadow: 1.5px black;
+.btn_Star_Games {
+    width: 70px;
+    height: 50px;
+    clip-path: polygon(0 0, 0% 100%, 100% 50%);
+    background-color: rgb(99, 95, 95);
+    color: black;
+    align-items: center;
+    transform: scale(1.1);
+    transition: 0.2s;
+    background-color: dodgerblue;
+    border: none;
     border-radius: 5px;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(221, 128, 6);
-    transition: 0.5s;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.btn_Quit:hover{
-    font-size: 20px;
-    box-shadow: 1.5px black;
+.btn_Quit:hover {
+    background-color: dodgerblue;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.2s;
+    border: none;
     border-radius: 5px;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(221, 128, 6);
-    transition: 0.5s;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-    
-.btn_Resume:hover{
-    font-size: 20px;
+.btn_Resume:hover {
+    background-color: dodgerblue;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.2s;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn_Pause:hover {
+    background-color: dodgerblue;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.2s;
+    border: none;
+    border-radius: px;
+    cursor: pointer;
+}
+
+.btn_Level1 {
+    font-size: 30px;
     box-shadow: 1.5px black;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+}
+
+.btn_Level2 {
+    font-size: 30px;
+    box-shadow: 1.5px black;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+}
+
+.btn_Level3 {
+    font-size: 30px;
+    box-shadow: 1.5px black;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+}
+
+.btn_Level4 {
+    font-size: 30px;
+    box-shadow: 1.5px black;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+}
+
+.btn_Level5 {
+    font-size: 30px;
+    box-shadow: 1.5px black;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+}
+
+.btn_Level5 {
+    font-size: 30px;
+    box-shadow: 1.5px black;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+
+}
+
+.btn_Level6 {
+    font-size: 30px;
+    box-shadow: 1.5px black;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aqua;
+}
+
+.btn_volumeon:hover {
+    background-color: orangered;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.2s;
+    border: none;
     border-radius: 10px;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(221, 128, 6);
-    transition: 0.5s;
-    cursor:pointer;
+
 }
 
-.btn_Pause:hover{
-    font-size: 20px;
-    box-shadow: 1.5px black;
-    border-radius: 5px;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(221, 128, 6);
-    transition: 0.5s;
-    cursor:pointer;
-}
-.btn_nextLever1{
-    font-size: 20px;
-    box-shadow: 1.5px black;
+.btn_volumeoff:hover {
+    background-color: orangered;
+    color: white;
+    transform: scale(1.1);
+    transition: 0.2s;
     border: none;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: aqua;
+    border-radius: 10px;
 }
-.btn_nextLever2{
-    font-size: 15px;
-    box-shadow: 1.5px black;
-    border: none;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: aqua;
+
+.btn_nextLevel2 {
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%,
+            100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    transform: scale(1.1);
+    transition: 0.2s;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    background-color: dodgerblue;
 }
-.btn_nextLever3{
-    font-size: 15px;
-    box-shadow: 1.5px black;
-   border: none;
-   font-family: 'Courier New', Courier, monospace;
-   background-color: aqua;
+
+.btn_nextLevel3 {
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%,
+            100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    transform: scale(1.1);
+    transition: 0.2s;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    background-color: dodgerblue;
 }
-.btn_nextLever4{
-    font-size: 15px;
-    box-shadow: 1.5px black;
-    border: none;
-    font-family: 'Courier New', Courier, monospace;
-   background-color: aqua;
+
+.btn_nextLevel4 {
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%,
+            100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    transform: scale(1.1);
+    transition: 0.2s;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    background-color: dodgerblue;
 }
-.btn_nextLever5{
-    font-size: 15px;
-    box-shadow: 1.5px black;
-    border: none;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: aqua;
+
+.btn_nextLevel5 {
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%,
+            100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    transform: scale(1.1);
+    transition: 0.2s;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    background-color: dodgerblue;
 }
-.btn_volumon:hover{
-   background-color: black;
-   border-radius: 5px;
-   cursor:pointer;
+
+.btn_nextLevel6 {
+    clip-path: polygon(0% 20%, 60% 20%, 60% 0%,
+            100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    transform: scale(1.1);
+    transition: 0.2s;
+    cursor: pointer;
+    width: 100px;
+    height: 50px;
+    background-color: dodgerblue;
 }
-.btn_volumoff:hover{
-    background-color: black;
-    border-radius: 5px;
-    cursor:pointer;
- }

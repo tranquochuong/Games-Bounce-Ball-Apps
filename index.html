@@ -1,42 +1,64 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Bounce ball</title>
     <link rel="stylesheet" href="style.css">
-</head> 
-<div class="background">
-    <body>      
-        <table>     
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="names">Bounce Ball</h1>
+        <table width="200px" height="20px">
             <tr>
-                <td class="btn"> 
-                    <h1 class="namegames"><i><b>Bounce Ball</b</i></h1>
-                    <button id="reset" class="btn_Reset d-none"     onclick="location.reload()">Reset</button>
-                    <button id="stargames" class="btn_Star_Games"       onclick="StarGames()">Star Games </button>
-                    <button id="quit" class="btn_Quit d-none"      onclick="location.reload()">Quit</button>
-                    <button id="resume" class="btn_Resume d-none"    onclick="Resume()">Resume</button>
-                    <button id="pause" class="btn_Pause d-none"     onclick="Pause()">Pause</button>
-                    <button id="lv1" class="btn_nextLever1 d-none">Lever1</button>
-                    <button id="lv2" class="btn_nextLever2 d-none">Lever2</button>
-                    <button id="lv3" class="btn_nextLever3 d-none">Lever3</button>
-                    <button id="lv4" class="btn_nextLever4 d-none">Lever4</button>
-                    <button id="lv5" class="btn_nextLever5 d-none">Lever5</button>
-                    <button id="lv6" class="btn_nextLever6 d-none">Lever6</button>
-                    
-                </td> 
-                <td>
-                    <td><button id="volumeon" class="btn_volumon" onclick="Volumeon()"><img src="volumeon.png" alt=""></button></td>
-                    <td><button id="volumeoff" class="btn_volumoff d-none" onclick="Volumeoff()"><img src="volumeoff.PNG" alt=""></button></td>
+                <td id="btnStart" class="btn_1">
+                    <button id="startgames" class="btn_Star_Games" onclick="StartGames()"><b>Play</b></button>
                 </td>
-            </tr>
-            <tr>
-                <td><canvas  id="myCanvas"  width="700" height="500"></canvas></td>
-            </tr> 
+                <td>
+                    <button id="reset" class="btn_Reset d-none" onclick="location.reload()">Play Again?</button>
+                </td>
+                <td>
+                    <button id="pause" class="btn_Pause d-none" onclick="Pause()">Pause</button>
+                </td>
+
+                <td>
+                    <button id="quit" class="btn_Quit d-none" onclick="location.reload()">Exit</button>
+
+                </td>
+                <td>
+                    <button id="resume" class="btn_Resume d-none" onclick="Resume()">Resume</button>
+                </td>
+                <td>
+                    <button id="volumeon" class="btn_volumeon" onclick="Volumeon()"><img src="volumeon.png"
+                            alt=""></button>
+                    <button id="volumeoff" class="btn_volumeoff d-none" onclick="Volumeoff()"><img src="volumeoff.PNG"
+                            alt=""></button>
+                </td>
+
+                <button id="lv1" class="btn_Level1 d-none">Level-1</button>
+                <button id="lv2" class="btn_Level2 d-none">Level-2</button>
+                <button id="lv3" class="btn_Level3 d-none">Level-3</button>
+                <button id="lv4" class="btn_Level4 d-none">Level-4</button>
+                <button id="lv5" class="btn_Level5 d-none">Level-5</button>
+                <button id="lv6" class="btn_Level6 d-none">Level-6</button>
+
+                <button id="nextlv2" class="btn_nextLevel2 d-none" onclick="nextLevel2()">NextLevel-1</button>
+                <button id="nextlv3" class="btn_nextLevel3 d-none" onclick="nextLevel3()">NextLevel-2</button>
+                <button id="nextlv4" class="btn_nextLevel4 d-none" onclick="nextLevel4()">NextLevel-3</button>
+                <button id="nextlv5" class="btn_nextLevel5 d-none" onclick="nextLevel5()">NextLevel-4</button>
+                <button id="nextlv6" class="btn_nextLevel6 d-none" onclick="nextLevel6()">NextLevel-5</button>
         </table>
-    </body>
-    <script src="game.js"></script>
-</div>
+        <canvas class="canvasStart" id="myCanvasStart" width="800px" height="500px"></canvas>
+        <canvas class="canvas d-none " id="myCanvas" width="800px" height="500px"></canvas>
+        <canvas class="canvasWin d-none " id="myCanvasWin" width="800px" height="500px"></canvas>
+        <canvas class="canvasLvUp d-none " id="myCanvasLvUp" width="800px" height="500px"></canvas>
+        <script src="game.js"></script>
+    </div>
+</body>
+
 
 </html>
